@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ ! -d $HOME/.vim/plugged ]; then
+if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
     echo "you need install vim-plug."
     echo "Aborted init."
     exit 1
