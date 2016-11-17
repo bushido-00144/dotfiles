@@ -11,6 +11,7 @@ if  uname -a | grep 'Darwin' ; then
 fi
 cp bashrc $HOME/.bashrc
 echo $LSOPTION >> $HOME/.bashrc
+source $HOME/.bashrc
 
 if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
     echo "you need install vim-plug."
