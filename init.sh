@@ -19,8 +19,8 @@ source $HOME/.bashrc
 
 if [ ! -e $HOME/.vim/autoload/plug.vim ]; then
     echo "you need install vim-plug."
-    echo "Aborted init."
-    exit 1
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    echo "vim-plug was installed. Please run \"PlugInstall\" command when run vim editor."
 fi
 
 cp vimrc  $HOME/.vimrc
